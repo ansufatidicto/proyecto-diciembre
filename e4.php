@@ -43,7 +43,7 @@ function eliminar_por_fecha($fecha_inicio, $fecha_fin, &$data) {
         unset($data[$key]);
     }
     
-    file_put_contents('games_filtered.json', json_encode($data, JSON_PRETTY_PRINT));
+    file_put_contents('games_fil.json', json_encode($data, JSON_PRETTY_PRINT));
 }
 
 eliminar_por_fecha('2017-01-01', '2020-12-31', $dades);
